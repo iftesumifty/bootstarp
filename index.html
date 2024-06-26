@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    
+    <link rel="icon" type="image/svg+xml" href="/assets/Logo-Bz2Y_Asy.png" />
+    
+<link rel="" href="https://getbootstrap.com/docs/5.0/examples/dashboard/dashboard.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+
+<style>
+  .flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap into multiple rows */
+      gap: 10px; /* Gap between flex items */
+  }
+
+  .flex-item {
+      flex: 1 1 auto; /* Flex-grow, flex-shrink, flex-basis */
+      min-width: calc(33.33% - 10px); /* Adjust width for gap */
+      max-width: calc(33.33% - 10px); /* Adjust width for gap */
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+  }
+
+  /* Adjust width for items in different rows */
+  .flex-item:nth-child(-n+2) {
+      flex-basis: calc(50% - 10px); /* Two columns for the first row */
+      max-width: calc(50% - 10px); /* Two columns for the first row */
+  }
+
+  .flex-item:nth-child(n+3):nth-child(-n+5) {
+      flex-basis: calc(33.33% - 10px); /* Three columns for the second row */
+      max-width: calc(33.33% - 10px); /* Three columns for the second row */
+  }
+
+  .flex-item:nth-child(n+6):nth-child(-n+7) {
+      flex-basis: calc(50% - 10px); /* Two columns for the third row */
+      max-width: calc(50% - 10px); /* Two columns for the third row */
+  }
+</style>
+
+    <title>Document</title>
+</head>
+<body>
+  <header class="navbar ">
+    <div class="user-menu" style="margin-left: 30cm;"  onclick="logout()">
+      <i class="fas fa-user"></i>
+  </header>
+   
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <div class="image">
+                <img src="/image/d.png" alt="Girl in a jacket" width="90" height="100">
+
+              </div><br>
+              <div class="uu"style="text-align:left; font: size 10cm;">overview</div>
+              <ul class="nav flex-column"0>
+                <li class="nav-item"class="shadow p-3 mb-5 bg-body rounded" >
+                  <a class="nav-link active" class="shadow p-3 mb-5 bg-body rounded" href="#">
+                    <i class="fa-solid fa-cube"></i>
+                    <span data-feather="users"></span>
+                    Home
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="registration.html">
+                    <i class="fa-solid fa-vector-square"></i>
+                    <span data-feather="shopping-cart"></span>
+                    Registration
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active"  href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span data-feather="home"></span>
+                    User
+                  </a>
+                </li>
+               
+                <li class="nav-item ">
+                  <a class="nav-link active"  href="#">
+                    <i class="fa-solid fa-clone"></i>
+                    <span data-feather="shopping-cart"></span>
+                    Home
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            
+            <div class="flex-container" style="margin-top: 2cm; row-gap: -1rem;" >
+              <!-- Row 1: 2 columns -->
+              <div class="flex-item" style="height: 8cm;">
+                <h3>  WELCOME</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+               <div class="button" style="justify-content: left;"><button style="background-color: aqua;">BECOME A MEMBER</button></div>
+                
+              </div>
+              <div class="flex-item"style="height: 8cm;" > 
+                <div class="text">
+                  <ul class="word-rotate-y">
+                    <li><span>eeeee</span></li>
+                    <li><span>kkkkk</span></li>
+                    <li><span>hhh</span></li>
+                    <li><span>Hello!</span></li>
+                    <li>
+                      <img src="https://blob.jortage.com/blob2/klOxP4bDXCo-fcFS/b7wYivK1T38q3Re8jKEyV90IxFlR0Vqevlmnp5BeEdA7Cyic8SXuXfGAHAvqpC/ANcVr7zw.png" height="64">
+                    </li>
+                    <li><span> faerhrrrwherrf</span></li>
+                    <li><span>ARRF ! !1</span></li>
+                    <li><span>5555555</span></li>
+                  </ul>
+  
+                </div>
+                </div>
+          
+              <!-- Row 2: 3 columns -->
+              <div class="flex-item" style="height: 13cm;" >
+                <h1>Registration For Log In</h1>
+                <div class="container1">
+                  <img src="image/winter.png" alt="Snow" style="width:100%;">
+                  
+                  <div class="centered"><p> Place here all information <br>Date:<br>
+                    venue:<br>
+                    Entry:
+                  </p></div>
+                </div>
+              </div>
+              <div class="flex-item"style="height: 13cm;" >
+
+                <form >
+                  <div class="">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                  </div>
+
+                  <div class="form-row"style="display: flex; gap:2cm;">
+                    
+                    <div class="col-md-4 mb-3">
+                      <label for="validationDefault02">Last name</label>
+                      <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationDefaultUsername">Username</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row" style="display: flex;gap: -11rem;">
+                    <div class="col-md-4 mb-2">
+                      <label for="validationDefault03">Guest(10+)</label>
+                      
+                      <input type="text" class="form-control" id="validationDefault03" placeholder="Guest(10+)" required>
+                      
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationDefault04">Guest(6+)</label>
+                      <input type="text" class="form-control" id="validationDefault04" placeholder="Guest(10+)" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationDefault05">Guest(20+)</label>
+                      <input type="text" class="form-control" id="validationDefault05" placeholder="Guest(10+)" required>
+                    </div>
+                  </div>
+                  <div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Age</th>
+        <th scope="col">Fee</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<div class="form-group">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+       </label>
+         </div>
+          </div>
+             <button class="btn btn-primary" type="submit">Submit form</button>
+             </form>
+               </div>
+             <div class="flex-item"style="height: 13cm;" >
+              <div>
+               <img  style="width: 7cm; height:10cm; background: white;" src="image/i.jpg" >
+              </div>
+               
+               </div>
+          
+              <!-- Row 3: 2 columns -->
+              <div class="flex-item"><h3>  Objectives</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P></div>
+              <div class="flex-item"><h3>  Objectives</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P></div>
+          </div>
+        
+              <canvas  class="my-4 w-100"   id="myChart" width="900" height="20"></canvas>
+        <div class="container" >
+  </div>
+</div>
+</main>
+</div>
+  </div>
+      <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
